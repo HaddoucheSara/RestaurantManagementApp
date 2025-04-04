@@ -1,0 +1,29 @@
+﻿@model Domain.DTOs.RestaurantDto
+
+<h2 class="mb-4">Détails du Restaurant</h2>
+
+<dl class="row mb-4">
+    <dt class="col-sm-3">Nom</dt>
+    <dd class="col-sm-9">@Model.Nom</dd>
+
+    <dt class="col-sm-3">Adresse</dt>
+    <dd class="col-sm-9">@Model.Adresse</dd>
+
+    <dt class="col-sm-3">Cuisine</dt>
+    <dd class="col-sm-9">@Model.Cuisine</dd>
+
+    <dt class="col-sm-3">Note</dt>
+    <dd class="col-sm-9">@Model.Note</dd>
+
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <dt class="col-sm-3">Image</dt>
+        <dd class="col-sm-9">
+            <img src="@Model.ImagePath" class="img-fluid" alt="Image du restaurant" />
+        </dd>
+    }
+</dl>
+
+<div class="d-flex justify-content-start">
+    <a asp-action="Index" class="btn btn-secondary">Retour</a>
+</div>

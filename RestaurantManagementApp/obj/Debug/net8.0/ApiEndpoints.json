@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "RestaurantManagementApp.Controllers.RestaurantsApiController",
+    "Method": "GetAllRestaurants",
+    "RelativePath": "api/RestaurantsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantManagementApp.Controllers.RestaurantsApiController",
+    "Method": "CreateRestaurant",
+    "RelativePath": "api/RestaurantsApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Domain.DTOs.RestaurantCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantManagementApp.Controllers.RestaurantsApiController",
+    "Method": "GetRestaurantById",
+    "RelativePath": "api/RestaurantsApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantManagementApp.Controllers.RestaurantsApiController",
+    "Method": "UpdateRestaurant",
+    "RelativePath": "api/RestaurantsApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Domain.DTOs.RestaurantUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RestaurantManagementApp.Controllers.RestaurantsApiController",
+    "Method": "DeleteRestaurant",
+    "RelativePath": "api/RestaurantsApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

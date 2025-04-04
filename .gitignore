@@ -1,0 +1,18 @@
+# Ignorer les fichiers de build et les dossiers générés
+bin/
+obj/
+
+# Ignorer les fichiers de l'IDE Visual Studio
+.vs/
+.vscode/
+.idea/
+
+# Ignorer les fichiers de configuration locaux
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+
+
+

@@ -1,0 +1,43 @@
+﻿@model Domain.DTOs.RestaurantUpdateDto
+
+<h2 class="mb-4">Modifier un Restaurant</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Nom" class="form-label"></label>
+        <input asp-for="Nom" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Adresse" class="form-label"></label>
+        <input asp-for="Adresse" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Cuisine" class="form-label"></label>
+        <input asp-for="Cuisine" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Note" class="form-label"></label>
+        <input asp-for="Note" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Image" class="form-label">Changer l’image</label>
+        <input asp-for="Image" type="file" class="form-control" />
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <div class="mb-3">
+            <label class="form-label">Image actuelle</label>
+            <img src="@Model.ImagePath" class="img-fluid" width="150" alt="Image actuelle du restaurant" />
+        </div>
+    }
+
+    <button type="submit" class="btn btn-success">Modifier</button>
+    <a asp-action="Index" class="btn btn-secondary ms-2">Annuler</a>
+</form>
